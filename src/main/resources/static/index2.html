@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>particles.js</title>
+  <title>Diro Login Page</title>
   <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
   <meta name="author" content="Vincent Garreau" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -22,7 +22,7 @@
       <input type="password" placeholder="密码">
     </div>
     <div class="login-btn">
-      <div class="login-btn-left">
+      <div class="login-btn-left" onclick="login()">
         <span>登录</span>
       </div>
       <div class="login-btn-right" onClick="changeImg()">
@@ -45,6 +45,10 @@
     }else{
       pic.src ="img/check.png"
     }
+  }
+
+  function login() {
+      window.location.href="index.html";
   }
 </script>
 </body>
